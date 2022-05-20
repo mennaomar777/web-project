@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"href="style.css">
+	<link rel="stylesheet"href="styleForm.css">
+	<title>Document</title>
+</head>
+<body style="background-color:black; margin:0;">
+	<div class="container">
+	<nav>
+		<div class="home"><a class="one" href="index.html">home</a></div>
+		<div><a class="one" href="news.html">News</a></div>
+		<div><a class="one" href="match.html">matches</a></div>	
+		<div><a class="one" href="competetion.html">competitions</a></div>
+		<div class="M"><a class="one" href="form.html">register</a></div>
+	</nav>
+	<article>
+		<!--form-->
+		<form class="registration" method="post" id="form">
+			<h1>👋 Welcome!</h1>
+			<label> <input  class="in" id="user" type="text" required placeholder="first name"></label>
+			<label> <input  class="in"type="text" id="user" required placeholder="last name"></label>
+			<label><input  class="in"type="email" id="email" required placeholder="email"></label>
+			<label> <input  class="in" type="tel" id="phone" name="phone" placeholder="phone number" required> </label>
+			<label><input  class="in"type="text"id="adress" required placeholder="address"></label>
+			<label> <input   class="in" type="password"id="pass" required placeholder="password"></label>
+		    <label><input class="in" type="password"id="passre" required placeholder="repeat password"></label>
+			 <label class="Radio">
+               			 <select required>
+               			     <option id="male" type="radio" class="input" name="gender" value="male">Male</option>
+                		    <option id="female" type="radio" class="input" name="gender" value="female">Female</option>
+             			   </select>
+			</label>
+			<label class="check_box">
+			  <input type="checkbox"id="checkbox" required>
+			  <span>I agree to the <a  class="special two" href="" target="_blank" title="Actually not a Terms of Service">Terms of Service</a></span>
+			</label>
+			<input class="button-contained" type="submit" value="sign up">
+			<p id="error"></p>
+			<div class="done">
+			  <h1>👌 You're all set!</h1>
+			  <a class="text" href="javascript:window.location.reload(true)">Again</a>
+			</div>
+			<div class="progress">
+			  <progress class="pure-material-progress-circular" >
+			</div>
+		  </form>
+	</article>
+</div>
+<script src="jsForm.js"></script>
+</body>
+</html>

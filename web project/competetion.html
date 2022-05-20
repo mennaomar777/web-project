@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"href="style.css">
+	<title>Document</title>
+	<style>
+		body{
+			background-image: url(wallpaper2.jpg);
+		}
+		nav{
+			background-color:  black;
+		}
+		div.con{
+			display: flex;
+			justify-content:space-between;
+			flex-wrap: wrap;
+		}
+		div.up{
+			width: 33%;
+			position: relative;
+			margin-top: 30px;
+		}
+		div.up span{
+			display: block;
+			text-align: center;
+			border-radius: 15px;
+			border:3px double rgb(81, 80, 80);
+			padding: 15px;
+			box-shadow:2px 2px 3px floralwhite;
+		}
+		div.up span:hover{
+			box-shadow:2px 2px 5px rgb(223, 197, 145);
+		}
+		div.drop{
+			height: 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top:60px;
+			visibility: hidden;
+			text-align: center;
+			border-radius: 15px;
+			border:3px double darkgrey;
+			z-index: 2;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			overflow: hidden;
+		}
+		div.up:hover div.drop{
+			transition: 1s;
+			visibility: visible;
+			height: 600px;
+		}
+		img{
+			width: 100%;
+			border-radius: 15px 15px 0 0;
+		}
+		article{
+			min-height: 100vh;
+		}
+		@media screen and (max-width:800px) 
+		{
+			div.con{
+				flex-direction: column;
+			}
+			div.up {
+				width: 100%;
+				
+			}
+			div.drop {
+				background-color: rgb(43, 36, 36);
+				color: white;
+			}
+		}
+    </style>
+</head>
+<body style="margin: 0;>
+	<div class="container">
+	<nav>
+		<div class="home"><a class="one" href="index.html">home</a></div>
+		<div><a class="one" href="news.html">News</a></div>
+		<div><a class="one" href="match.html">matches</a></div>	
+		<div><a class="one" href="competetion.html">competitions</a></div>
+		<div class="M"><a class="one" href="form.html">register</a></div>
+	</nav>
+	<article>
+		<h1>international sport events</h1>
+		<div class="con">
+			<div class="up">
+				<span>roland garros</span>
+				<div class="drop">
+					<div class="gallery">
+						<a class="two" target="_blank" href="s1.jfif">
+						<img src="s1.jfif"  >
+						</a> class="two
+						<div class="desc">
+							<p>The French Open, also called Roland-Garros, is a major tennis tournament held over two weeks at the Stade Roland-Garros in Paris, France, beginning in late May each year. The tournament and venue are named after the French aviator Roland Garros. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="up">
+				<span>world cup </span>
+				<div class="drop">
+					<div class="gallery">
+						<a  class="two" target="_blank" href="s2.jfif">
+						<img src="s2.jfif"  >
+						</a>
+						<div class="desc">
+							<p>The FIFA World Cup, often simply called the World Cup, is an international association football competition contested by the senior men's national teams of the members of the Fédération Internationale de Football Association (FIFA), the sport's global governing body.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="up">
+				<span> champions league</span>
+				<div class="drop">
+					<div class="gallery">
+						<a  class="two" target="_blank" href="s3.jfif">
+						<img src="s3.jfif"  >
+						</a>
+						<div class="desc">
+							<p>The 2022–23 UEFA Champions League will be the 68th season of Europe's premier club football tournament organised by UEFA, and the 31st season since it was renamed from the European Champion Clubs' Cu...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="up">
+				<span>Eurpe league</span>
+				<div class="drop">
+					<div class="gallery">
+						<a  class="two" target="_blank" href="s4.jfif">
+						<img src="s4.jfif"  >
+						</a>
+						<div class="desc">
+							<p>The UEFA Europa League (abbreviated as UEL) is an annual football club competition organised by the Union of European Football Associations (UEFA) for eligible European football clubs. It is the second-tier competition of European club football, ranking below the UEFA Champions League </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="up">
+				<span> Africation nation cup</span>
+				<div class="drop">
+					<div class="gallery">
+						<a  class="two" target="_blank" href="s5.jfif">
+						<img src="s5.jfif"  >
+						</a>
+						<div class="desc">
+							<p>The CAF Cup was an annual competition organised by the CAF for domestic leagues runners-up of member associations who have not qualified to one of the two pre-existing CAF international club competitions the African Cup of Champions Clubs or the African Cup Winners' Cup.</p>
+							 </div>
+					</div>
+				</div>
+			</div>
+			<div class="up">
+				<span>olympiad</span>
+				<div class="drop">
+					<div class="gallery">
+						<a  class="two" target="_blank" href="s6.jfif">
+						<img src="s6.jfif"  >
+						</a>
+						<div class="desc">
+							<p>An Olympiad (Greek: Ὀλυμπιάς, Olympiás) is a period of four years associated with the Olympic Games of the Ancient Greeks. Although the Ancient Olympic Games were established during Archaic Greece, it was not until the Hellenistic period, beginning with Ephorus, that the Olympiad was used as a calendar epoch.</p>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+</div>
+</body>
+</html>

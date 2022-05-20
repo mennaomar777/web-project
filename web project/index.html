@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"href="style.css">
+	<title>Document</title>
+	<style>
+		nav{
+			background-color: black;
+		}
+		div.landing{
+			min-height: 170vh;
+			 background-image: url(a5.jpg); 
+			background-size: cover;
+			position: relative;
+		}
+		.overlay{
+			background-color: black;
+			opacity: .65;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top:0;
+			z-index: 1;
+		}
+		.intro{
+			position: absolute;
+			left: 50%;
+			top: 40%;
+			transform: translate(-50%,-50%);
+			z-index: 1;
+			color:white;
+			text-align: center;
+		}
+		h1{
+			padding: 50px;
+		}
+
+		.centerBike {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: 26px;
+		margin-left: -12px;
+		}
+
+		.center {
+		position: absolute;
+		top: 110%;
+		left: 50%;
+		margin-top: -50px;
+		margin-left: -50px;
+		}
+
+		#loop {
+		height: 100px;
+		width: 100px;
+		border: rgba(187, 95, 39, 1) solid 4px;
+		border-radius: 200px;
+		}
+
+		#loop:before {
+		background: -moz-linear-gradient(left, rgba(187, 95, 39, 0) 0%,rgba(187, 95, 39, 1) 30%, rgba(187, 95, 95, 1) 70%, rgba(187, 95, 39, 0) 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(187, 95, 39, 0)), color-stop(30%, rgba(187, 95, 39, 1)), color-stop(70%, rgba(187, 95, 39, 1)), color-stop(100%, rgba(187, 95, 39, 0)));
+		background: -webkit-linear-gradient(left, rgba(187, 95, 39, 0) 0%, rgba(187, 95, 39, 1) 30%, rgba(187, 95, 39, 1) 70%, rgba(187, 95, 39, 0) 100%);
+		background: -o-linear-gradient(left, rgba(187, 95, 39, 0) 0%, rgba(187, 95, 39, 1) 30%, rgba(187, 95, 39, 1) 70%, rgba(187, 95, 39, 0) 100%);
+		background: -ms-linear-gradient(left, rgba(187, 95, 39, 0) 0%, rgba(187, 95, 39, 1)30%, rgba(187, 95, 39, 1) 70%, rgba(187, 95, 39, 0) 100%);
+		background: linear-gradient(to right, rgba(187, 95, 39, 0) 0%,rgba(187, 95, 39, 1)) 30%, rgba(187, 95, 39, 1) 70%, rgba(187, 95, 39, 0) 100%);
+		content: "";
+		display: block;
+		height: 4px;
+		left: -100px;
+		position: relative;
+		top: 100px;
+		width: 300px;
+		}
+
+		#bike-wrapper {
+		height: 108px;
+		width: 108px;
+		animation: drive 7s linear infinite ;
+		}
+
+		#bike {
+		height: 24px;
+		width: 25px;
+		 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/133687/motorbike.png"); 
+		}
+
+		@keyframes drive {
+		0% {
+			margin-left: -364px;
+			opacity: 0;
+		}
+		33.33% {
+			transform: rotate(0deg);
+			margin-left: -50px;
+			opacity: 1;
+		}
+		66.66% {
+			transform: rotate(-360deg);
+			margin-left: -50px;
+			opacity: 1;
+		}
+		100% {
+			margin-left: 264px;
+			transform: rotate(-360deg);
+			opacity: 0;
+		}
+		}
+		@media only screen and (max-width: 800px) and (min-width: 600px)
+		{
+			div.landing{
+				width: 75%;
+			}
+		}
+	</style>
+</head>
+<body style="margin: 0;">
+	
+	<div class="container">
+	<nav class="active">
+		<div class="home"><a  class="one" href="index.html">home</a></div>
+		<div><a class="one" href="news.html">News</a></div>
+		<div><a class="one" href="match.html">matches</a></div>	
+		<div><a class="one" href="competetion.html">competitions</a></div>
+		<div class="one" class="M"><a href="form.html">register</a></div>
+	</nav>
+	<div class="landing">
+			<div class="overlay"></div>
+			<div class="intro">
+				<h1 class="logo">sport page</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+				<div id="loop" class="center"></div>
+				<div id="bike-wrapper" class="center">
+				<div id="bike" class="centerBike"></div>
+				</div>
+			</div>
+	</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

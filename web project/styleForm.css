@@ -1,0 +1,203 @@
+/* Material Customization */
+
+:root {
+    --pure-material-primary-rgb: 255, 191, 0;
+    --pure-material-onsurface-rgb: 0, 0, 0;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220vh; 
+}
+
+.registration {
+    position: relative;
+    border-radius: 15px;
+    padding: 16px 48px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-color: white;
+}
+
+h1 {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    text-align: center;
+}
+body{
+    background-image: url(wallpaper2.jpg);
+}
+		
+
+.registration >label {
+    display: block;
+    margin: 30px 0;
+    width: 400px;
+}
+ input.in {
+    padding: 10px;
+    font-size: 15px;
+    width: 300px;
+   
+} 
+ 
+input.in {
+    display: block;
+    margin: auto;
+}
+
+button {
+    display: block !important;
+    margin: 32px auto;
+}
+
+.done,
+.progress {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    visibility: hidden;
+}
+
+label.Radio {
+    display: flex;
+    justify-content: center;
+}
+
+.done {
+    transition: visibility 0s 1s;
+}
+
+.signed>.done {
+    visibility: visible;
+}
+
+.done>a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.progress {
+    opacity: 0;
+}
+
+.signed>.progress {
+    animation: loading 4s;
+}
+
+.button-contained {
+    display: block;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    border: transparent;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(187, 95, 39, 1);
+    cursor: pointer;
+    color: white;
+}
+.button-contained:hover{
+    background-color:  rgb(162, 66, 6);
+}
+
+span.sa {
+    margin: 15px;
+}
+
+@keyframes loading {
+    0% {
+        visibility: visible;
+    }
+    12.5% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    87.5% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+nav {
+    background-color:  black ;
+    color: white;
+   padding: 15px;
+}
+
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    div.container {
+        flex-direction: row;
+        position: relative;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        order: 1;
+        width: 25%;
+        height: 200vh;
+    }
+    nav div {
+        width: 100%;
+        margin: 15px;
+    }
+    article {
+        width: 75%;
+        border-bottom: none;
+    }
+    .Radio {
+        justify-content: center;
+    }
+    .Radio {
+        margin: 15px;
+        ;
+    }
+    .registration>label {
+        display: block;
+        margin: 24px 0;
+        width: 420px;
+    }
+     
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav div {
+        width: 100%;
+    }
+    article {
+        border-bottom: none;
+    }
+    .registration>label {
+        display: block;
+        width: 220px;
+    }
+    .registration {
+        padding: 10px;
+    }
+    label.textfield input {
+        width: 160px;
+    }
+    label.Radio span {
+        font-size: 20px;
+    }
+}
