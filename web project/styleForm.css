@@ -189,13 +189,13 @@ nav {
     }
     .registration>label {
         display: block;
-        width: 250px;
+        width: 390px;
     }
     .registration {
         padding: 10px;
     }
     label.textfield input {
-        width: 70px;
+        width: 90px;
     }
     label.Radio span {
         font-size: 20px;
