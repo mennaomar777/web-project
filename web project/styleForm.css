@@ -35,12 +35,12 @@ body{
 .registration >label {
     display: block;
     margin: 30px 0;
-    width: 330px;
+    width: 400px;
 }
  input.in {
     padding: 10px;
     font-size: 15px;
-    width: 250px;
+    width: 300px;
    
 } 
  
